@@ -16,6 +16,7 @@
        // SingleEngineFile:'../../Cocos2d-html5-min.js',
         appFiles:[
             'src/DynamicWorldScence.js',
+            'src/DynamicHumanLayer.js',
             'src/StandHumanLayer.js',
             'src/resource.js',
             'src/WorldElement.js'
