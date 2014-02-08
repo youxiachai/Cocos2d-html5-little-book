@@ -3,14 +3,16 @@
  */
 
 
+var ImgRes = ImgRes || {},
+    g_resources = [];
 
-var s_runner_png = "runner.png";
-var s_running_png = "running.png";
-var s_running_plist = "running.plist"
+ImgRes.s_runner_png = "runner.png";
+ImgRes.s_running_png = "running.png";
+ImgRes.s_running_plist = "running.plist";
 
-var g_resources = [
-    //image
-    {src:s_runner_png},
-    {src:s_running_png},
-    {src:s_running_plist}
-];
+//把需要预加载的资源路径添加进来
+Object.keys(ImgRes).forEach(function (item){
+    g_resources.push({
+        src : ImgRes[item]
+    })
+})

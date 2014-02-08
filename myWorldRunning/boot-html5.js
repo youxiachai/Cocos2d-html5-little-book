@@ -18,7 +18,8 @@
             'src/DynamicWorldScence.js',
             'src/HumanLayer.js',
             'src/StandHumanLayer.js',
-            'src/resource.js'
+            'src/resource.js',
+            'src/BasicWorldValue.js'
         ]
     };
     window.addEventListener('DOMContentLoaded', function () {
