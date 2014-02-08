@@ -40,7 +40,7 @@ var HumanLayer = cc.Layer.extend({
 
 
         this.body = new cp.Body(1, cp.momentForBox(1, mineSize.width, mineSize.height))
-        this.body.p = cc.p(50, BasicWorldValue.groundHeight + mineSize.height / 2);
+        this.body.p = cc.p(50, WorldElement.groundHeight + mineSize.height / 2);
 //        this.body.p = cc.p(0,1000);
         this.body.applyImpulse(cp.v(150, 0), cp.v(0, 0));//
         // run speed

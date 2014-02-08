@@ -7,7 +7,7 @@ var BackgroundLayer = cc.Layer.extend({
          // 定义一个白色背景
          this.addChild(cc.
              LayerColor.
-             create(new cc.Color4B(255, 255, 255, 255), BasicWorldValue.width, BasicWorldValue.height));
+             create(new cc.Color4B(255, 255, 255, 255), WorldElement.width, WorldElement.height));
      }
 });
 
@@ -19,12 +19,12 @@ var DynamicWorldScence = cc.Scene.extend({
 
        //  设置世界的地平面
         var wallBottom = new cp.SegmentShape(this.newtonSpace.staticBody,
-        cp.v(0, BasicWorldValue.groundHeight),
-        cp.v(BasicWorldValue.groundWidth,  BasicWorldValue.groundHeight),
+        cp.v(0, WorldElement.groundHeight),
+        cp.v(WorldElement.groundWidth,  WorldElement.groundHeight),
         0);
 
         // 设置世界的尽头
-        var wallRight = new cp.SegmentShape(this.newtonSpace.staticBody, cp.v(BasicWorldValue.width - 5, BasicWorldValue.groundHeight), cp.v(BasicWorldValue.width - 5,200), 0)
+        var wallRight = new cp.SegmentShape(this.newtonSpace.staticBody, cp.v(WorldElement.width - 5, WorldElement.groundHeight), cp.v(WorldElement.width - 5,200), 0)
 
         this.newtonSpace.addStaticShape(wallBottom);
         this.newtonSpace.addStaticShape(wallRight);

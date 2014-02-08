@@ -16,10 +16,10 @@
        // SingleEngineFile:'../../Cocos2d-html5-min.js',
         appFiles:[
             'src/DynamicWorldScence.js',
-            'src/HumanLayer.js',
+            'src/DynamicHumanLayer.js',
             'src/StandHumanLayer.js',
             'src/resource.js',
-            'src/BasicWorldValue.js'
+            'src/WorldElement.js'
         ]
     };
     window.addEventListener('DOMContentLoaded', function () {

@@ -5,5 +5,5 @@
 
 console.log([].push("res"))
 console.log([].concat("res",'src'))
-var BasicWorldValue = BasicWorldValue || {}
+var BasicWorldValue = WorldElement || {}
 console.log(BasicWorldValue);
